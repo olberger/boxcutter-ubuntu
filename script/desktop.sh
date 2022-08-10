@@ -9,8 +9,8 @@ SSH_USER=${SSH_USERNAME:-vagrant}
 echo "==> Checking version of Ubuntu"
 . /etc/lsb-release
 
-echo "==> Installing ubuntu-desktop"
-apt-get install -y ubuntu-desktop
+echo "==> Installing ubuntu-desktop-minimal"
+apt-get install -y ubuntu-desktop-minimal
 
 USERNAME=${SSH_USER}
 LIGHTDM_CONFIG=/etc/lightdm/lightdm.conf
