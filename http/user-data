@@ -20,7 +20,9 @@ autoinstall:
     - 'echo "vagrant        ALL=(ALL)       NOPASSWD: ALL" > /target/etc/sudoers.d/vagrant'
     - chmod 440 /target/etc/sudoers.d/vagrant
     - apt-get -y install linux-headers-$(uname -r)
-  locale: en_US
+  timezone: Europe/Paris
+  locale: fr_FR.UTF-8
   keyboard: 
-    layout: us
+    layout: "fr"
+    toggle: null
     variant: ''
